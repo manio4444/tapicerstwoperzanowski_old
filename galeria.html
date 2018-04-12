@@ -1,0 +1,17 @@
+<center>
+<?php
+
+	$dir = opendir('galeria');
+	$i=0;
+	echo "<center>";
+	while(false !== ($file = readdir($dir)))
+		if(substr($file, -4)  == ".jpg" || substr($file, -4)  == ".JPG" ) {
+				$i++;
+				echo "<div style='width:190px; float:left; margin:5px;'><a href='galeria/$file' rel='lightbox[roadtrip]'><img src='galeria/obrazek.php?src=$file' /></a></div>";
+			if ($i==3) { echo "<br />"; $i=0;}
+		}
+		echo "</center>";
+			
+			
+?>
+</center>

@@ -1,0 +1,64 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pl">
+<head>
+<meta http-equiv="Content-type" content="text/html; charset=iso-8859-2" />
+<meta name="keywords" content="tapicerzy mińsk mazowiecki, zakłady tapicerskie, tapicerka, usługi tapicerskie, tapicerstwo samochodowe, tapicerowanie, tapicerstwo meblowe, mińsk mazowiecki" />
+<meta name="description" content="Renowacja mebli tapicerskich, meble tapicerowane na zamówienie, tapicerstwo samochodowe, obijanie drzwi." />
+<title>Zakad Tapicerski Arkadiusz Perzanowski</title>
+
+<link rel="stylesheet" href="js/lightbox.css" type="text/css" media="screen" />
+<script src="js/prototype.js" type="text/javascript"></script>
+<script src="js/scriptaculous.js?load=effects,builder" type="text/javascript"></script>
+<script src="js/lightbox.js" type="text/javascript"></script>
+<link rel="stylesheet" href="style.css" type="text/css"/>
+
+
+</head>
+
+<body>
+
+	<div id="calosc">
+	
+		<div id="baner"><a href="?id=glowna"></a></div>
+		
+		<div id="lewoprawo">
+			<div id="lewa">
+			
+			<div id="m1"><a href="?id=glowna"></a></div>
+			<div id="m2"><a href="?id=galeria"></a></div>
+			<div id="m3"><a href="?id=kontakt"></a></div>
+			
+			</div>
+
+			<div id="prawa">
+				<div style="height:530px; float:left;"></div>
+				<div id="prawa_inside">
+				
+		<?php
+
+		if ($_GET['id']) {
+			include($_GET['id'] . ".html");
+		} else {
+			include("glowna.html");
+		}
+
+		?>
+
+				</div><!--prawa_inside-->
+			</div><!--prawa-->
+		</div><!--lewoprawo-->
+		<div id="stopka">
+			&copy;Copright 2011. Wszelkie prawa zastrzeżone. Wykonanie - <a href="mailto:kalinowskixmarcin@o2.pl">Marcin Kalinowski</a><br />
+			<a href="?id=glowna">Tapicerstwo Mińsk Mazowiecki</a>, <a href="?id=glowna">Renowacja mebli tapicerskich</a>,	<a href="?id=glowna">Meble tapicerskie na zamówienie</a>, <a href="?id=glowna">Tapicerka samochodowa</a>,	<a href="?id=glowna">Obijanie drzwi</a>
+			
+			
+			
+		</div>
+	</div><!--calosc-->
+	
+
+
+</body>
+
+</html>
